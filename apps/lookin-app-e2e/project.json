@@ -1,0 +1,9 @@
+{
+  "name": "lookin-app-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/lookin-app-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["lookin-app"],
+  "// targets": "to see all targets run: nx show project lookin-app-e2e --web",
+  "targets": {}
+}

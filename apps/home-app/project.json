@@ -1,0 +1,37 @@
+{
+  "name": "home-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/home-app/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project home-app --web",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/home-app"
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "options": {
+        "buildTarget": "home-app:build",
+        "port": 4200
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/home-app/**/*.ts", "apps/home-app/**/*.tsx"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "apps/home-app/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

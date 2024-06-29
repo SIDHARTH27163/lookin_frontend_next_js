@@ -1,0 +1,9 @@
+{
+  "name": "home-app-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/home-app-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["home-app"],
+  "// targets": "to see all targets run: nx show project home-app-e2e --web",
+  "targets": {}
+}
