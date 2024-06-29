@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "admin": "nx serve admin-app --port 4200",
-    "home": "nx serve home-app --port 4201",
+    "admin": "nx serve admin-app ",
+    "home": "nx serve home-app ",
     "start": "concurrently \"npm run admin\" \"npm run home\""
   },
   "private": true,

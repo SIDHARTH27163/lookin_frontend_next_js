@@ -17,7 +17,7 @@
       "executor": "@nrwl/next:server",
       "options": {
         "buildTarget": "admin-app:build",
-        "port": 4204 
+        "port": 3001
       }
     },
     "lint": {

@@ -17,8 +17,7 @@
       "executor": "@nrwl/next:server",
       "options": {
         "buildTarget": "home-app:build",
-        "port": 4200
-      }
+        "port": 3000      }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
