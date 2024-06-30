@@ -1,0 +1,21 @@
+/* shared-assets/styles/fonts.css */
+@font-face {
+        font-family: 'Roboto-medium';
+        src:url('../fonts/Roboto-Medium.ttf') format('truetype');
+        
+      }
+      @font-face {
+        font-family: 'Roboto-regular';
+        src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+       
+      }
+      @font-face {
+        font-family: 'Roboto-light';
+        src: url('../fonts/Roboto-Light.ttf') format('truetype');
+        
+      }
+      @font-face {
+        font-family: 'Playwrite';
+        src: url('../fonts/PlaywriteDEGrund-VariableFont_wght.ttf') format('truetype');
+        
+      }

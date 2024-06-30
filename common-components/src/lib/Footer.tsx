@@ -6,11 +6,11 @@ export default function Footer() {
     
 <footer className="bg-white" aria-labelledby="footer-heading">
   <h2 id="footer-heading" className="sr-only">Footer</h2>
-  <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+  <div className="mx-auto  w-full px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
     <div className="xl:grid xl:grid-cols-3 xl:gap-8">
       <div className="space-y-8">
         <Image src={logo} alt="lookin"/>
-        <p className="text-sm leading-6 text-gray-600">Making football look better to the world and a more respecful game.</p>
+        <p className="text-md leading-6 text-gray-600 font-Playwrite">Making football look better to the world and a more respecful game.</p>
         <div className="flex space-x-6">
           <a href="#" className="text-gray-400 hover:text-gray-500">
             <span className="sr-only">Facebook</span>
@@ -48,72 +48,72 @@ export default function Footer() {
       <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
         <div className="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 className="text-sm font-semibold leading-6 text-gray-900">Solutions</h3>
+            <h3 className="text-lg font-Roboto_medium  leading-6 text-gray-900">Solutions</h3>
             <ul role="list" className="mt-6 space-y-4">
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Marketing</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Marketing</a>
               </li>
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Analytics</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Analytics</a>
               </li>
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Commerce</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Commerce</a>
               </li>
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Insights</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Insights</a>
               </li>
             </ul>
           </div>
           <div className="mt-10 md:mt-0">
-            <h3 className="text-sm font-semibold leading-6 text-gray-900">Support</h3>
+            <h3 className="text-lg font-Roboto_medium  leading-6 text-gray-900">Support</h3>
             <ul role="list" className="mt-6 space-y-4">
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Pricing</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Pricing</a>
               </li>
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Documentation</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Documentation</a>
               </li>
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Guides</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Guides</a>
               </li>
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">API Status</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">API Status</a>
               </li>
             </ul>
           </div>
         </div>
         <div className="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 className="text-sm font-semibold leading-6 text-gray-900">Company</h3>
+            <h3 className="text-lg font-Roboto_medium  leading-6 text-gray-900">Company</h3>
             <ul role="list" className="mt-6 space-y-4">
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">About</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">About</a>
               </li>
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Blog</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Blog</a>
               </li>
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Jobs</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Jobs</a>
               </li>
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Press</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Press</a>
               </li>
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Partners</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Partners</a>
               </li>
             </ul>
           </div>
           <div className="mt-10 md:mt-0">
-            <h3 className="text-sm font-semibold leading-6 text-gray-900">Legal</h3>
+            <h3 className="text-lg font-Roboto_medium  leading-6 text-gray-900">Legal</h3>
             <ul role="list" className="mt-6 space-y-4">
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Claim</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Claim</a>
               </li>
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Privacy</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Privacy</a>
               </li>
               <li>
-                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900">Terms</a>
+                <a href="#" className="text-sm leading-6 text-gray-600 hover:text-gray-900 font-Roboto_regular">Terms</a>
               </li>
             </ul>
           </div>
