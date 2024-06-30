@@ -36,5 +36,9 @@
     "jest.config.ts",
     "**/*.spec.ts",
     "**/*.test.ts"
-  ]
+  ],
+  "baseUrl": ".",
+    "paths": {
+      "@shared-assets/*": ["shared-assets/*"]
+    }
 }

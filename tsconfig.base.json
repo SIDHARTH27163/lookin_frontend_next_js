@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "jsx": "react-jsx", // Add this line
     "paths": {
-      "@lookin-app/common-components": ["common-components/src/index.ts"]
+      "@lookin-app/common-components": ["common-components/src/index.ts"],
+      "@shared-assets/*": ["shared-assets/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from 'react';
-
+import Image from 'next/image';
+import logo from '@shared-assets/images/logo.png'
 const Navbar: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -63,14 +64,11 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav id="header" className=" w-full z-30 top-0 bg-gray-300">
-      <div className="w-full flex flex-wrap items-center justify-between mt-0 py-1 l px-2">
+    <nav id="header" className=" w-full z-30 top-0 shadow-md mb-10 ">
+      <div className="w-full flex  mt-0 py-2 l px-2">
         <a href="/" className="flex flex-row hover:shadow-lg hover:rounded-full transform transition hover:scale-110 duration-500 ease-in-out">
       
-          <div className="flex flex-col px-1">
-            <h1 className="toggleColour text-yellow-400 lg:text-2xl md:text-xl sm:text-ms text-base font-bold">Lookin Dharamshala</h1>
-            <h1 className="toggleColour1 text-gray-900 lg:text-base md:text-base sm:text-xs text-xs font-fold">What You Think, We Have It</h1>
-          </div>
+          <Image src={logo} alt="logo"/>
         </a>
         <div className="block lg:hidden pr-2">
           <button id="nav-toggle" className="flex items-center p-1 text-gray-900 hover:text-slate-950 transform transition hover:scale-110 duration-300 ease-in-out" onClick={toggleMenu}>
@@ -80,8 +78,8 @@ const Navbar: React.FC = () => {
             </svg>
           </button>
         </div>
-        <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-1 lg:mt-0 lg:bg-transparent p-2 lg:p-0 z-20" id="nav-content">
-          <ul className="list-reset lg:flex justify-end flex-1 items-center py-1">
+        <div className="w-full  flex-grow lg:flex lg:items-center lg:w-auto hidden mt-1 lg:mt-0 lg:bg-transparent p-2 lg:p-0 z-20" id="nav-content">
+          <ul className="list-reset lg:flex justify-center flex-1 items-center py-1  w-auto">
             <li className="mr-0">
               <a id="navitem" className="toggleColour hover:bg-slate-900 hover:text-white text-black inline-block text-lg hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-500 ease-in-out py-2 px-4 font-bold" href="/">Home</a>
             </li>
@@ -95,6 +93,15 @@ const Navbar: React.FC = () => {
               <a id="navitem2" className="toggleColour4 hover:bg-slate-900 hover:text-white text-black inline-block text-lg hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-500 ease-in-out py-2 px-4 font-bold" href="/tourist_places">It Services</a>
             </li>
           </ul>
+          
+        </div>
+        <div className="flex flex-row hover:shadow-lg hover:rounded-full transform transition hover:scale-110 duration-500 ease-in-out">
+      
+        <ul className="list-reset lg:flex justify-center flex-1 items-center py-1  w-auto">
+            <li className="mr-0">
+              <a id="navitem" className="toggleColour hover:bg-slate-900 hover:text-white text-black inline-block text-lg hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-500 ease-in-out py-2 px-4 font-bold" href="/">Home</a>
+            </li>
+            </ul>
         </div>
       </div>
     </nav>

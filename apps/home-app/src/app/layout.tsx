@@ -1,4 +1,6 @@
+import { Footer, Navbar } from '@lookin-app/common-components';
 import './global.css';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Welcome to home-app',
@@ -12,12 +14,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-      <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
-      </head>
+           <head>
+          
+            </head> 
       <body>
         
-        {children}</body>
+        <Navbar/>
+        {children}
+        <Footer/>
+        </body>
     </html>
   );
 }
