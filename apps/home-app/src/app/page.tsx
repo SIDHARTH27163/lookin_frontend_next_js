@@ -1,3 +1,4 @@
+import { Buttons } from "@lookin-app/common-components";
 
 export default function Index() {
   return (
@@ -18,10 +19,8 @@ export default function Index() {
               <div className="mt-12 text-2xl leading-10 max-md:mt-10 max-md:max-w-full font-Playwrite">
                 We are here ready to help you in making creative digital products
               </div>
-              <div className="justify-center self-start p-2 mt-14 text-lg text-gray-100 bg-rose-600 rounded-[32px] max-md:px-5 max-md:mt-10">
-                Let’s Discuss
-              </div>
              
+             <Buttons label={"Get Started"} className={"justify-center font-Roboto_regular0 text-2xl  self-start p-2 mt-14 text-gray-100 bg-rose-600 rounded-xl  max-md:px-5 max-md:mt-10 transform transition hover:scale-110 duration-500 ease-in-out"}/>
             </div>
           </div>
           <div className="flex flex-col ml-5 md:w-full w-6/12 max-md:ml-0 max-md:w-full">

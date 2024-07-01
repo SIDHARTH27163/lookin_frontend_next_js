@@ -5,7 +5,8 @@
   "scripts": {
     "admin": "nx serve admin-app ",
     "home": "nx serve home-app ",
-    "start": "concurrently \"npm run admin\" \"npm run home\""
+    "itservices":"nx serve itservices-app ",
+    "start": "concurrently \"npm run admin\" \"npm run home\" \"npm run itservices\""
   },
   "private": true,
   "dependencies": {

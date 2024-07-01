@@ -14,7 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "jsx": "react-jsx", // Add this line
+    "jsx": "react-jsx",
     "paths": {
       "@lookin-app/common-components": ["common-components/src/index.ts"],
       "@shared-assets/*": ["shared-assets/*"]
