@@ -1,23 +1,29 @@
 "use client";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import logo from '@shared-assets/images/logo.png'
+import logo from '@shared-assets/images/logo.png';
+import Link from 'next/link';
+
 const Navbar: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
+    document.addEventListener('click', handleOutsideClick);
+    
     const handleScroll = () => {
       const header = document.getElementById('header');
       const navcontent = document.getElementById('nav-content');
       const scrollpos = window.scrollY ;
 
       if (header && navcontent) {
-        if (scrollpos > 120) {
-          console.log("scolling")
-          header.classList.add('bg-gray-200', 'shadow');
+        if (scrollpos > 100) {
+         
+          header.classList.add('bg-white', 'shadow-lg');
           header.classList.remove('transparent');
           navcontent.classList.remove('bg-gray-100');
           navcontent.classList.add('bg-white');
         } else {
-          header.classList.remove('bg-gray-200', 'shadow');
+          header.classList.remove('bg-white', 'shadow-lg');
           header.classList.add('transparent');
           navcontent.classList.remove('bg-white');
           navcontent.classList.add('bg-gray-200');
@@ -28,14 +34,12 @@ const Navbar: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('click', handleOutsideClick);
     };
   }, []);
 
   const toggleMenu = () => {
-    const navMenuDiv = document.getElementById('nav-content');
-    if (navMenuDiv) {
-      navMenuDiv.classList.toggle('hidden');
-    }
+    setMenuOpen(!menuOpen);
   };
 
   const checkParent = (target: EventTarget | null, elm: HTMLElement | null): boolean => {
@@ -53,53 +57,68 @@ const Navbar: React.FC = () => {
     const navMenu = document.getElementById('nav-toggle');
 
     if (navMenuDiv && !checkParent(target, navMenuDiv) && navMenu && !checkParent(target, navMenu)) {
-      navMenuDiv.classList.add('hidden');
+      setMenuOpen(false);
     }
   };
 
-  useEffect(() => {
-    document.addEventListener('click', handleOutsideClick);
-    return () => {
-      document.removeEventListener('click', handleOutsideClick);
-    };
-  }, []);
+
 
   return (
-    <nav id="header" className=" w-full z-30 top-0 shadow-md fixed ">
-      <div className="w-full flex  mt-0  py-3 lg:px-2 md:px-2 ">
-        <div className='flex justify-between lg:w-auto md:w-full sm:w-full w-full '>
-          <a href="/" className="flex flex-row hover:shadow-lg hover:rounded-full transform transition hover:scale-110 duration-500 ease-in-out">
-
-            <Image src={logo} alt="logo" className="h-16" />
-          </a>
-          <div className="block lg:hidden pr-2 ">
-            <button id="nav-toggle" className="flex items-center p-1 text-gray-900 hover:text-slate-950 transform transition hover:scale-110 duration-300 ease-in-out" onClick={toggleMenu}>
-              <svg className="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <title>Menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-              </svg>
+    <nav id="header" className="w-full z-30 top-0 fixed ">
+      <div className="w-full flex flex-row mt-0 py-3 lg:px-2 md:px-2 ">
+        <div className="flex justify-between lg:w-auto md:w-full sm:w-full w-full ">
+          <Link href="/" className="flex flex-row hover:shadow-lg hover:rounded-full transform transition hover:scale-110 duration-500 ease-in-out">
+            <Image src={logo} alt="logo" />
+          </Link>
+          <div className="block lg:hidden pr-2">
+            <button
+              id="nav-toggle"
+              className="flex items-center  h-full p-1 text-gray-900 hover:text-slate-950 transform transition hover:scale-110 duration-300 ease-in-out"
+              onClick={toggleMenu}
+            >
+              {menuOpen ? (
+                <svg className="fill-current h-10 w-8" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <title>Close</title>
+                  <path d="M10 8.586L1.707.293 0 2 8.586 10 0 18.586 1.707 20l8.293-8.293L18.586 20 20 18.586 10.707 10 20 1.707 18.586 0z" />
+                </svg>
+              ) : (
+                <svg className="fill-current h-10 w-8" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <title>Menu</title>
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+              )}
             </button>
           </div>
         </div>
-        <div className="w-full  flex-grow lg:flex lg:items-center lg:w-auto hidden mt-1 lg:mt-0 lg:bg-transparent p-2 lg:p-0 z-20" id="nav-content">
-          <ul className="list-reset lg:flex justify-end flex-1  py-1  w-auto">
+        <div
+          className={`lg:flex lg:items-end  lg:w-full  lg:bg-transparent lg:p-0 lg:relative lg:mt-0 p-2 absolute w-full transition-all duration-500 ease-in-out bg-white shadow-lg ${menuOpen ? 'top-full' : 'top-[-300px]'} lg:top-auto lg:opacity-100 lg:static lg:shadow-none ${menuOpen ? '' : 'opacity-0'} z-20`}
+          id="nav-content"
+        >
+          <ul className="list-reset lg:flex justify-end flex-1 py-2 w-full lg:w-auto">
             <li className="mr-0">
-              <a id="navitem" className="font-Roboto_medium text-lg toggleColour hover:bg-slate-900 hover:text-white text-black inline-block  hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-500 ease-in-out py-2 px-4 " href="/">Home</a>
+              <Link className="font-Roboto_medium leading-7 text-2xl mx-2 toggleColour hover:bg-slate-900 hover:text-white text-black inline-block hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-700 ease-in-out py-2 px-4" href="/">
+                Home
+              </Link>
             </li>
             <li className="mr-0">
-              <a id="navitem1" className=" font-Roboto_medium text-lg toggleColour2 hover:bg-slate-900 hover:text-white text-black inline-block  hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-500 ease-in-out py-2 px-4 " href="/blogs">Blogs</a>
+              <Link className="font-Roboto_medium leading-7 text-2xl mx-2 toggleColour2 hover:bg-slate-900 hover:text-white text-black inline-block hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-700 ease-in-out py-2 px-4" href="http://localhost:3001" target="_blank">
+                Blogs
+              </Link>
             </li>
             <li className="mr-0">
-              <a id="navitem2" className=" font-Roboto_medium text-lg toggleColour3 hover:bg-slate-900 hover:text-white text-black inline-block  hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-500 ease-in-out py-2 px-4 " href="/tourist_places">Tourist Places</a>
+              <Link className="font-Roboto_medium leading-7 text-2xl mx-2 toggleColour3 hover:bg-slate-900 hover:text-white text-black inline-block hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-700 ease-in-out py-2 px-4" href="/tourist_places">
+                Tourist Places
+              </Link>
             </li>
             <li className="mr-0">
-              <a id="navitem2" className=" font-Roboto_medium text-lg toggleColour4 hover:bg-slate-900 hover:text-white text-black inline-block  hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-500 ease-in-out py-2 px-4 " href="/tourist_places">It Services</a>
+              <Link className="font-Roboto_medium leading-7 text-2xl mx-2 toggleColour4 hover:bg-slate-900 hover:text-white text-black inline-block hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-700 ease-in-out py-2 px-4" href="http://localhost:3002">
+                IT Services
+              </Link>
             </li>
           </ul>
-
         </div>
-
       </div>
+
     </nav>
   );
 };
