@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav id="header" className="w-full z-30 top-0 fixed ">
-      <div className="w-full flex flex-row mt-0 py-3 lg:px-2 md:px-2 ">
+      <div className="w-full flex flex-row mt-0 py-2 lg:px-2 md:px-2 ">
         <div className="flex justify-between lg:w-auto md:w-full sm:w-full w-full ">
           <Link href="/" className="flex flex-row hover:shadow-lg hover:rounded-full transform transition hover:scale-110 duration-500 ease-in-out">
             <Image src={logo} alt="logo" />
@@ -96,22 +96,22 @@ const Navbar: React.FC = () => {
         >
           <ul className="list-reset lg:flex justify-end flex-1 py-2 w-full lg:w-auto">
             <li className="mr-0">
-              <Link className="font-Roboto_medium leading-7 text-2xl mx-2 toggleColour hover:bg-slate-900 hover:text-white text-black inline-block hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-700 ease-in-out py-2 px-4" href="/">
+              <Link className="font-Roboto_medium leading-7 text-xl mx-2 toggleColour hover:bg-slate-900 hover:text-white text-black inline-block hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-700 ease-in-out py-2 px-4" href="/">
                 Home
               </Link>
             </li>
             <li className="mr-0">
-              <Link className="font-Roboto_medium leading-7 text-2xl mx-2 toggleColour2 hover:bg-slate-900 hover:text-white text-black inline-block hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-700 ease-in-out py-2 px-4" href="http://localhost:3001" target="_blank">
+              <Link className="font-Roboto_medium leading-7 text-xl mx-2 toggleColour2 hover:bg-slate-900 hover:text-white text-black inline-block hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-700 ease-in-out py-2 px-4" href="http://localhost:3001" target="_blank">
                 Blogs
               </Link>
             </li>
             <li className="mr-0">
-              <Link className="font-Roboto_medium leading-7 text-2xl mx-2 toggleColour3 hover:bg-slate-900 hover:text-white text-black inline-block hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-700 ease-in-out py-2 px-4" href="/tourist_places">
+              <Link className="font-Roboto_medium leading-7 text-xl mx-2 toggleColour3 hover:bg-slate-900 hover:text-white text-black inline-block hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-700 ease-in-out py-2 px-4" href="/tourist_places">
                 Tourist Places
               </Link>
             </li>
             <li className="mr-0">
-              <Link className="font-Roboto_medium leading-7 text-2xl mx-2 toggleColour4 hover:bg-slate-900 hover:text-white text-black inline-block hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-700 ease-in-out py-2 px-4" href="http://localhost:3002">
+              <Link className="font-Roboto_medium leading-7 text-xl mx-2 toggleColour4 hover:bg-slate-900 hover:text-white text-black inline-block hover:shadow-lg hover:rounded-xl no-underline transform transition hover:scale-105 duration-700 ease-in-out py-2 px-4" href="http://localhost:3002">
                 IT Services
               </Link>
             </li>
