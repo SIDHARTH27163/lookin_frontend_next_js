@@ -7,6 +7,9 @@
     "home": "nx serve home-app ",
     "itservices": "nx serve itservices-app ",
     "start": "concurrently \"npm run admin\" \"npm run home\" \"npm run itservices\"",
+    "admin-build": "nx run admin-app:build",        
+    "home-build": "nx run home-app:build",          
+    "itservices-build": "nx run itservices-app:build", 
     "build-all": "nx run-many --target=build --all"
   },
   "private": true,
