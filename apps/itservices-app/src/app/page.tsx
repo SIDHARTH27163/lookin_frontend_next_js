@@ -27,6 +27,59 @@ export default function Index() {
     </div>
   </div>
 </section>
+{/* crousle */}
+
+<section className="px-5">
+  <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+   
+    <main className="flex flex-col ml-5 max-md:ml-0 max-md:w-full">
+      <section className="flex flex-col grow pt-14 w-full bg-slate-50 max-md:mt-1.5 max-md:max-w-full">
+        <h2 className="self-center text-4xl font-bold text-gray-900 leading-[54.95px]">Services we offer</h2>
+        <div className="px-11 py-8 mt-12 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+            <article className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col justify-center max-md:mt-10">
+                <div className="flex flex-col py-9 pr-14 pl-7 rounded-lg shadow-lg bg-neutral-50 max-md:px-5">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/900d4d60241fe835359a85190c1a7abebd1367d18e14d734f517f34d1112da81?apiKey=c81a87a8b87043acac16b0e47d857063&" alt="Mobile App Development icon" className="rounded-full border border-rose-400 border-solid aspect-[1.49] w-[86px]" />
+                  <h3 className="mt-5 text-xl font-semibold leading-7 text-gray-700 max-md:mr-0.5">Mobile App Development</h3>
+                  <p className="mt-5 ml-8 text-sm leading-6 text-slate-500 max-md:ml-2.5">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+                </div>
+              </div>
+            </article>
+            <article className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col grow justify-center mt-10 max-md:mt-10">
+                <div className="flex flex-col px-14 py-10 rounded-lg border border-rose-400 border-solid shadow-lg bg-neutral-50 max-md:px-5">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/16940bd5af47649ab942bc7929414533f696b715380e5860eb8808d9c536c294?apiKey=c81a87a8b87043acac16b0e47d857063&" alt="Web Design & Development icon" className="aspect-square w-[58px]" />
+                  <h3 className="mt-4 text-xl font-semibold leading-7 bg-clip-text bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)]">Web Design & Development</h3>
+                  <p className="mt-5 text-sm leading-6 text-slate-600">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+                </div>
+              </div>
+            </article>
+            <article className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col justify-center max-md:mt-10">
+                <div className="flex flex-col px-9 py-9 rounded-lg shadow-lg bg-neutral-50 max-md:px-5">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ad6ae8f3ea0497393a0be0862854dd2ab3f4c4910941165b4274bda4a1b9fe50?apiKey=c81a87a8b87043acac16b0e47d857063&" alt="Software Testing Service icon" className="rounded-full border border-rose-400 border-solid aspect-[1.39] w-[81px]" />
+                  <h3 className="mt-5 text-xl font-semibold leading-7 text-gray-700 max-md:mr-0.5">Software Testing Service</h3>
+                  <p className="mt-5 ml-6 text-sm leading-6 text-slate-500 max-md:ml-2.5">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <nav className="flex gap-2 justify-center items-center self-center mt-2" aria-label="Pagination">
+          <button className="shrink-0 self-stretch my-auto rounded-full border border-solid border-slate-300 h-[13px] stroke-[1px] w-[13px]" aria-label="Page 1"></button>
+          <button className="shrink-0 self-stretch my-auto rounded-full border border-solid border-slate-300 h-[13px] stroke-[1px] w-[13px]" aria-label="Page 2"></button>
+          <button className="shrink-0 self-stretch rounded-full border border-white border-solid bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)] h-[18px] stroke-[1px] w-[18px]" aria-label="Current Page 3" aria-current="page"></button>
+          <button className="shrink-0 self-stretch my-auto rounded-full border border-solid border-slate-300 h-[13px] stroke-[1px] w-[13px]" aria-label="Page 4"></button>
+          <button className="shrink-0 self-stretch my-auto rounded-full border border-solid border-slate-300 h-[13px] stroke-[1px] w-[13px]" aria-label="Page 5"></button>
+        </nav>
+        <hr className="shrink-0 mt-14 h-px border border-solid bg-zinc-200 border-zinc-200 max-md:mt-10 max-md:max-w-full" />
+      </section>
+    </main>
+   
+  </div>
+</section>
+{/* crousle */}
 <section className="flex flex-col  mx-auto max-w-7xl">
 <div className="flex flex-col items-center text-center text-gray-900">
     <div className="h-[5px] w-[69px] bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)]" aria-hidden="true"></div>
@@ -136,6 +189,7 @@ export default function Index() {
     </div>
   </section>
 </section>
+
     </div>
   );
 }
