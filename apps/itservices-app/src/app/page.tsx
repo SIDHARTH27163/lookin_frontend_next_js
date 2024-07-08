@@ -52,7 +52,7 @@ export default function Index() {
           <blockquote className="flex gap-4 mt-5 text-base font-light max-md:flex-wrap">
             <span className="shrink-0 bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)] h-[87px] w-[3px]"></span>
             <p className="italic bg-clip-text bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)] max-md:max-w-full">
-              "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"
+              imform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules
             </p>
           </blockquote>
           <figure className="flex gap-2.5 justify-center self-start mt-6">
@@ -80,7 +80,7 @@ export default function Index() {
             Build the right team to scale
           </h2>
           <p className=" font-Playwrite mt-8 text-lg text-gray-700 max-md:max-w-full">
-            Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers
+            Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term not the case with freelancers
           </p>
           <p className="mt-2.5 text-lg text-gray-700 bg-clip-text bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)] max-md:max-w-full">
             Our delivery model helps you cut costs and deliver within budget.
@@ -88,7 +88,7 @@ export default function Index() {
           <blockquote className="flex gap-4 mt-5 text-base font-light max-md:flex-wrap">
             <span className="shrink-0 bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)] h-[87px] w-[3px]"></span>
             <p className="italic bg-clip-text bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)] max-md:max-w-full">
-              "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"
+              Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules
             </p>
           </blockquote>
           <figure className="flex gap-2.5 justify-center self-start mt-6">
@@ -118,7 +118,7 @@ export default function Index() {
           <blockquote className="flex gap-4 mt-5 text-base font-light max-md:flex-wrap">
             <span className="shrink-0 bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)] h-[87px] w-[3px]"></span>
             <p className="italic bg-clip-text bg-[linear-gradient(225deg,#F76680_0%,#57007B_100%)] max-md:max-w-full">
-              "Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"
+              Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules
             </p>
           </blockquote>
           <figure className="flex gap-2.5 justify-center self-start mt-6">
