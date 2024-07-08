@@ -4,12 +4,11 @@ frontend:
     preBuild:
       commands:
         - npm ci
-        - npx nx --version  # Ensure nx is available
     build:
       commands:
-        - npm run build-all  # This will run nx run-many --target=build --all
+        - npm run build
   artifacts:
-    baseDirectory: dist/apps/admin-app  # Adjust if needed
+    baseDirectory: ./
     files:
       - '**/*'
   cache:
