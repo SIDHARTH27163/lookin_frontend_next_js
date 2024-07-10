@@ -7,10 +7,15 @@ frontend:
     build:
       commands:
         - npm run build-all
-  artifacts:
-    baseDirectory: dist/apps/home-app/.next
+ artifacts:
     files:
       - '**/*'
+    baseDirectory: /
+    directories:
+      - dist/apps/home-app/.next: home-app
+      - dist/apps/admin-app/.next: admin-app
+      - dist/apps/itservices-app/.next: itservices-app
+     
   cache:
     paths:
-      - node_modules/**/*
+      - node_modules/**/
